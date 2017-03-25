@@ -11,15 +11,19 @@
 		01BDB14E1E870D7B00446DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BDB14C1E870D7B00446DB5 /* Main.storyboard */; };
 		01BDB1501E870D7B00446DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BDB14F1E870D7B00446DB5 /* Assets.xcassets */; };
 		01BDB1531E870D7B00446DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BDB1511E870D7B00446DB5 /* LaunchScreen.storyboard */; };
+		01BDB1601E8717FA00446DB5 /* Deckade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDB15F1E8717FA00446DB5 /* Deckade.swift */; };
+		01BDB1621E871AE300446DB5 /* DeckadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDB1611E871AE300446DB5 /* DeckadeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01BDB1451E870D7B00446DB5 /* capstoneTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstoneTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		01BDB1481E870D7B00446DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01BDB1481E870D7B00446DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = capstoneTest2/AppDelegate.swift; sourceTree = "<group>"; };
 		01BDB14D1E870D7B00446DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		01BDB14F1E870D7B00446DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01BDB14F1E870D7B00446DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = capstoneTest2/Assets.xcassets; sourceTree = "<group>"; };
 		01BDB1521E870D7B00446DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		01BDB1541E870D7B00446DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BDB1541E870D7B00446DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = capstoneTest2/Info.plist; sourceTree = "<group>"; };
+		01BDB15F1E8717FA00446DB5 /* Deckade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deckade.swift; sourceTree = "<group>"; };
+		01BDB1611E871AE300446DB5 /* DeckadeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckadeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,9 @@
 			children = (
 				01BDB1471E870D7B00446DB5 /* capstoneTest2 */,
 				01BDB1461E870D7B00446DB5 /* Products */,
+				01BDB1481E870D7B00446DB5 /* AppDelegate.swift */,
+				01BDB1541E870D7B00446DB5 /* Info.plist */,
+				01BDB14F1E870D7B00446DB5 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +59,52 @@
 		01BDB1471E870D7B00446DB5 /* capstoneTest2 */ = {
 			isa = PBXGroup;
 			children = (
-				01BDB1481E870D7B00446DB5 /* AppDelegate.swift */,
-				01BDB14C1E870D7B00446DB5 /* Main.storyboard */,
-				01BDB14F1E870D7B00446DB5 /* Assets.xcassets */,
-				01BDB1511E870D7B00446DB5 /* LaunchScreen.storyboard */,
-				01BDB1541E870D7B00446DB5 /* Info.plist */,
+				01BDB15D1E87177600446DB5 /* Model */,
+				01BDB15C1E87176A00446DB5 /* ModelController */,
+				01BDB15B1E87175B00446DB5 /* ViewController */,
+				01BDB15A1E87175600446DB5 /* View */,
+				01BDB15E1E87179000446DB5 /* Storyboard */,
 			);
 			path = capstoneTest2;
+			sourceTree = "<group>";
+		};
+		01BDB15A1E87175600446DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		01BDB15B1E87175B00446DB5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		01BDB15C1E87176A00446DB5 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				01BDB1611E871AE300446DB5 /* DeckadeController.swift */,
+			);
+			name = ModelController;
+			sourceTree = "<group>";
+		};
+		01BDB15D1E87177600446DB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01BDB15F1E8717FA00446DB5 /* Deckade.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		01BDB15E1E87179000446DB5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				01BDB14C1E870D7B00446DB5 /* Main.storyboard */,
+				01BDB1511E870D7B00446DB5 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				01BDB1491E870D7B00446DB5 /* AppDelegate.swift in Sources */,
+				01BDB1621E871AE300446DB5 /* DeckadeController.swift in Sources */,
+				01BDB1601E8717FA00446DB5 /* Deckade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
