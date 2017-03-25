@@ -43,7 +43,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="528" id="Bpt-AB-Iwt" customClass="DeckadeTableViewCell" customModule="capstoneTest2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="deckadeCell" rowHeight="528" id="Bpt-AB-Iwt" customClass="DeckadeTableViewCell" customModule="capstoneTest2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="528"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bpt-AB-Iwt" id="359-JN-AGB">
@@ -81,6 +81,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Y4l-8Z-Vch"/>
+                    <connections>
+                        <outlet property="deckadeSearch" destination="Nyl-QI-r07" id="2CF-7W-NFO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxq-jx-n1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
