@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fdp-gf-Je5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hsN-Sd-Ni8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,55 +10,81 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
-        <scene sceneID="Cw8-TA-3jM">
+        <!--Navigation Controller-->
+        <scene sceneID="SFh-Q4-4sg">
             <objects>
-                <tableViewController id="fdp-gf-Je5" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="585" sectionHeaderHeight="28" sectionFooterHeight="28" id="yB5-fc-YhP">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hsN-Sd-Ni8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eaz-cE-VNh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.21360703891849808" green="0.65318129800743563" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7dw-co-qlA" kind="relationship" relationship="rootViewController" id="56F-67-84l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfv-2l-r3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="56"/>
+        </scene>
+        <!--Deckade Table View Controller-->
+        <scene sceneID="YXd-QX-4Df">
+            <objects>
+                <tableViewController id="7dw-co-qlA" customClass="DeckadeTableViewController" customModule="capstoneTest2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="528" sectionHeaderHeight="28" sectionFooterHeight="28" id="RJA-qA-eKc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Deckade search..." id="Nyl-QI-r07">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="585" id="8LP-Hx-z6C">
-                                <rect key="frame" x="0.0" y="28" width="375" height="585"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="528" id="Bpt-AB-Iwt" customClass="DeckadeTableViewCell" customModule="capstoneTest2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="528"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8LP-Hx-z6C" id="I8v-jY-pq1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="584"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bpt-AB-Iwt" id="359-JN-AGB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kro-Ii-kjX">
-                                            <rect key="frame" x="33" y="38" width="308" height="377"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="377" id="5Es-9A-Spz"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ji-oS-KEu">
-                                            <rect key="frame" x="33" y="429" width="274" height="24"/>
-                                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9h-pZ-8AY">
+                                            <rect key="frame" x="166" y="41" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tnP-cz-mlA">
+                                            <rect key="frame" x="31" y="80" width="313" height="389"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="0Ji-oS-KEu" firstAttribute="top" secondItem="Kro-Ii-kjX" secondAttribute="bottom" constant="14" id="21t-NR-d3w"/>
-                                        <constraint firstItem="Kro-Ii-kjX" firstAttribute="leading" secondItem="0Ji-oS-KEu" secondAttribute="leading" id="DAz-Hv-Dd8"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="0Ji-oS-KEu" secondAttribute="trailing" constant="60" id="NeE-2q-9E2"/>
-                                        <constraint firstItem="Kro-Ii-kjX" firstAttribute="centerX" secondItem="I8v-jY-pq1" secondAttribute="centerX" id="ZoE-oa-GzN"/>
-                                        <constraint firstItem="Kro-Ii-kjX" firstAttribute="leading" secondItem="I8v-jY-pq1" secondAttribute="leadingMargin" constant="25" id="a67-Zs-7hj"/>
-                                        <constraint firstItem="Kro-Ii-kjX" firstAttribute="top" secondItem="I8v-jY-pq1" secondAttribute="topMargin" constant="30" id="kLb-9m-Foh"/>
+                                        <constraint firstItem="P9h-pZ-8AY" firstAttribute="centerX" secondItem="359-JN-AGB" secondAttribute="centerX" id="3yL-Y7-Wnj"/>
+                                        <constraint firstItem="tnP-cz-mlA" firstAttribute="leading" secondItem="359-JN-AGB" secondAttribute="leadingMargin" constant="23" id="9Kr-CN-m40"/>
+                                        <constraint firstItem="P9h-pZ-8AY" firstAttribute="top" secondItem="359-JN-AGB" secondAttribute="topMargin" constant="33" id="D94-qX-Dhd"/>
+                                        <constraint firstItem="P9h-pZ-8AY" firstAttribute="centerX" secondItem="tnP-cz-mlA" secondAttribute="centerX" id="QVm-7p-vdM"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="tnP-cz-mlA" secondAttribute="bottom" constant="50" id="qCv-JK-F4f"/>
+                                        <constraint firstItem="tnP-cz-mlA" firstAttribute="top" secondItem="P9h-pZ-8AY" secondAttribute="bottom" constant="18" id="ucy-QE-mSv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="deckadeImageView" destination="tnP-cz-mlA" id="aCf-xf-ynD"/>
+                                    <outlet property="nameLabel" destination="P9h-pZ-8AY" id="u41-AM-zIq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="fdp-gf-Je5" id="VPd-Fd-LK6"/>
-                            <outlet property="delegate" destination="fdp-gf-Je5" id="y3g-bL-CYb"/>
+                            <outlet property="dataSource" destination="7dw-co-qlA" id="WDy-ZY-GMg"/>
+                            <outlet property="delegate" destination="7dw-co-qlA" id="BnX-LM-ibg"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Y4l-8Z-Vch"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYV-hR-OkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxq-jx-n1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109.59999999999999" y="56.221889055472268"/>
+            <point key="canvasLocation" x="1040.8" y="54.422788605697157"/>
         </scene>
     </scenes>
 </document>

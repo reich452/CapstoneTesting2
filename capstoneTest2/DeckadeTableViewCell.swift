@@ -9,7 +9,9 @@
 import UIKit
 
 class DeckadeTableViewCell: UITableViewCell {
-
-
+    
+    
+    @IBOutlet weak var deckadeImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
 
 }

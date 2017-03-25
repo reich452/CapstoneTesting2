@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DeckadeTableViewController: UITableViewController {
+class DeckadeTableViewController: UITableViewController, UISearchBarDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
