@@ -13,6 +13,8 @@
 		01BDB1531E870D7B00446DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BDB1511E870D7B00446DB5 /* LaunchScreen.storyboard */; };
 		01BDB1601E8717FA00446DB5 /* Deckade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDB15F1E8717FA00446DB5 /* Deckade.swift */; };
 		01BDB1621E871AE300446DB5 /* DeckadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDB1611E871AE300446DB5 /* DeckadeController.swift */; };
+		01BDB1641E871B3300446DB5 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDB1631E871B3300446DB5 /* NetworkController.swift */; };
+		01BDB1661E871B5400446DB5 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDB1651E871B5400446DB5 /* ImageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		01BDB1541E870D7B00446DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = capstoneTest2/Info.plist; sourceTree = "<group>"; };
 		01BDB15F1E8717FA00446DB5 /* Deckade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deckade.swift; sourceTree = "<group>"; };
 		01BDB1611E871AE300446DB5 /* DeckadeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckadeController.swift; sourceTree = "<group>"; };
+		01BDB1631E871B3300446DB5 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		01BDB1651E871B5400446DB5 /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				01BDB15D1E87177600446DB5 /* Model */,
+				01BDB1671E871B6800446DB5 /* HelperFiles */,
 				01BDB15C1E87176A00446DB5 /* ModelController */,
 				01BDB15B1E87175B00446DB5 /* ViewController */,
 				01BDB15A1E87175600446DB5 /* View */,
@@ -105,6 +110,15 @@
 				01BDB1511E870D7B00446DB5 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		01BDB1671E871B6800446DB5 /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				01BDB1631E871B3300446DB5 /* NetworkController.swift */,
+				01BDB1651E871B5400446DB5 /* ImageController.swift */,
+			);
+			name = HelperFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BDB1661E871B5400446DB5 /* ImageController.swift in Sources */,
+				01BDB1641E871B3300446DB5 /* NetworkController.swift in Sources */,
 				01BDB1491E870D7B00446DB5 /* AppDelegate.swift in Sources */,
 				01BDB1621E871AE300446DB5 /* DeckadeController.swift in Sources */,
 				01BDB1601E8717FA00446DB5 /* Deckade.swift in Sources */,
